@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Manrope", Helvetica, sans-serif;
+}
+
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body {
+  background-color: var(--Dark-Blue);
+}
+body .container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote-search {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+  width: 35vw;
+  min-width: 300px;
+  padding: 0.4rem;
+  border-radius: 5px;
+  background-color: var(--Grayish-Blue);
+}
+#quote-search i {
+  padding: 0.75rem;
+  background-color: var(--Neon-Green);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#quote-search i:hover {
+  background-color: var(--Light-Cyan);
+}
+#quote-search input {
+  width: 100%;
+  height: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: var(--Dark-Blue);
+  outline: none;
+  border: 1px solid var(--Neon-Green);
+  text-indent: 1rem;
+  color: #fff;
+  font-size: 18px;
+}
+#quote-search input:active {
+  border: 1px solid var(--Neon-Green);
+}
+
+#error {
+  color: var(--Neon-Green);
+  font-size: 14px;
+  font-weight: 700;
+  display: none;
+}
+
+.quote-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 800;
+  width: 35vw;
+  height: 300px;
+  min-width: 300px;
+  min-height: 220px;
+  padding: 1rem;
+  background-color: var(--Dark-Grayish-Blue);
+  border-radius: 5px;
+}
+.quote-container .quoteId {
+  margin: 1.5rem 0;
+  letter-spacing: 1px;
+  color: var(--Neon-Green);
+}
+.quote-container .quoteId #id {
+  margin-left: 0.2rem;
+}
+.quote-container .p-divider {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.quote-container .p-divider img {
+  width: 90%;
+}
+.quote-container .dice {
+  position: absolute;
+  bottom: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--Neon-Green);
+}
+.quote-container .dice:hover {
+  background-color: var(--Light-Cyan);
+}
+
+.quote-text {
+  display: flex;
+  position: relative;
+}
+.quote-text p {
+  font-size: 25px;
+  color: var(--Light-Cyan);
+  text-align: center;
+}
+.quote-text img {
+  width: 50px;
+  height: 50px;
+}
+.quote-text .icon-previous,
+.quote-text .icon-next {
+  display: none;
+  position: absolute;
+  padding: 1rem;
+  background-color: var(--Neon-Green);
+  border-radius: 50%;
+}
+.quote-text .icon-previous:hover,
+.quote-text .icon-next:hover {
+  background-color: var(--Grayish-Blue);
+}
+.quote-text .icon-next {
+  right: -2.5rem;
+}
+.quote-text .icon-previous {
+  left: -2.5rem;
+}
+
+@media (max-width: 900px) {
+  .quote-container {
+    height: auto;
+  }
+  .quote-text p {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=style.css.map */
