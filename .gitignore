@@ -14,3 +14,11 @@
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
 .prettierignore
+
+# echo "# advice-generatr-app" >> README.md
+# git init
+# git add README.md
+# git commit -m "first commit"
+# git branch -M main
+# git remote add origin https://github.com/M1RAK/advice-generatr-app.git
+# git push -u origin main
